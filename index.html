@@ -4,93 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Resource Hub</title>
 </head>
 
-<body>
+<body id="body" class="dark-mode">
 
     
     <nav>
-        <img src="logo_name" alt="logo_name">
-            <li>
-                <ul> <a href="">help </a></ul>
-                <ul> <a href="">contact </a></ul>
-                <ul> <a href="">suggestions?</a></ul>
-            </li>
-    </nav>
-
-    <div id="side_bar_nav">
+        <div>
+        <a href="index.html"> <img  src="images/cropped-salas_franchesca_vocabulary.png"  height="86px" width="86px" alt="logo of chicken nugget" > 
+        </a>
+        </div>
         <li>
-            <ul> <a href="design_stuff.html"> Design and visually pleasing asetic </a></ul>
-            <ul> <a href="html_help.html"> Html assit</a></ul>
-            <ul> <a href="css_help.html"> CSS GURU</a></ul>
-            <ul> <a href="javascript_help.html"> Javascripting</a></ul>
-            <ul> <a href="frame_work.html">Where to Frame work</a></ul>
-            <ul> <a href="career_help.html"> Next step! Career time</a></ul>
-            
-        </li>
-    </div>
+                <ul> <a href="index.html">Home </a></ul>
+            </li>
+    </nav> 
+        <header>
+        <h1>Hello this is the Resource Hub</h1>
+        </header>
 
+
+        <!-- THIS IS THE TOGGLE BUTTON  -->
+            <h3 >Let's change the lights in this Hub</h3>
+            <button type="button" name="dark_light" onclick="toggleDarklight()" title="Toggle Darklight"> 🌙 </button>
+            <p>Press the moon to toggle</p>
+            <!-- END TOUGGLE BUTTON -->
+    
+
+<!-- welcome to the club section -->
+    <main id="welcomeToClub">
+        <h2>Welcome to the club!</h2>
+        <p> Here is is where we find how to get started on finding resoruces to learn to code</p>
+    </main>
+    <!-- welcome to the club section END -->
+    
+
+<!-- doubting yourself button -->
+</div> 
+    <div id="testingQuoteButton">
+            <div>
+            <h2>Doubting yourseld??</h2>
+            <h4> Fret not!!! Click the button for a geneerated motivation quote to help kick start your journey </h4>
+            <p id="quote"> </p>
+            <h6 id="author"> </h6>
+            <button id="getQuote" onkeypress="displayRandomQuote"> MOTIVATION PLEASE!!</button>
+        </div>
+    </div>
+<!-- doubting yourself button END -->
+
+<!-- Container with flex items  -->
+    <div class="container">
     <div class="flex_main">
-        <h4> hello this is a change</h4>
-        <p> this is the get assets branch testing</p>
-        <h2>this is a conflic t merge</h2>
+        
         <div>
-            <h3>Design and visually pleasing asetic</h3>
-            <p> <a href="design_stuff.html"> want to see more?</a> </p>
-            <img src="image_of_random" alt="screenshot of image of one webapage thingy">
+            <h3>Design and Visually Pleasing Aesthetic</h3>
+            <p> <a href="list_of_sources.html#designInsp"> Inspo On Designing A Beautiful Website</a> </p>
+            <img src="images/aesthetic-websites.jpeg" height="186px" width="286px"  alt="screenshot of image of one webapage thingy">
         </div>
     </div>
 
     <div class="flex_main">
         <div>
-            <h3>html help</h3>
-            <p> <a href="html_help.html"> Html assit</a> </p>
-            <img src="image_of_random" alt="screenshot of image of one webapage thingy">
+            <h3>Courses To Learn From </h3>
+            <p> <a href="list_of_sources.html#courses"> Courses To Take Along The Journey </a> </p>
+            <img src="images/courses.jpeg" height="186px" width="286px" alt="screenshot of image of one webapage thingy">
         </div>
     </div>
 
     <div class="flex_main">
         <div>
-            <h3>Css Help</h3>
-            <p> <a href="css_help.html"> CSS GURU</a> </p>
-            <img src="image_of_random" alt="screenshot of image of one webapage thingy">
+            <h3>HTML , CSS, And JAVASCRIPT </h3>
+            <p> <a href="list_of_sources.html#bigThree">HTML CSS Javascript Help!</a> </p>
+            <img src="images/HtmlCssJavascript.jpeg" height="186px" width="286px" alt="screenshot of image of one webapage thingy">
         </div>
     </div>
 
     <div class="flex_main">
         <div>
-            <h3>javascript help</h3>
-            <p> <a href="javascript_help.html"> Javascripting</a> </p>
-            <img src="image_of_random" alt="screenshot of image of one webapage thingy">
-        </div>
-    </div>
-
-
-    <div class="flex_main">
-        <div>
-            <h3>Frame work help</h3>
-            <p> <a href="frame_work.html"> Where to Frame work</a> </p>
-            <img src="image_of_random" alt="screenshot of image of one webapage thingy">
+            <h3>Coding Challange</h3>
+            <p> <a href="list_of_sources.html#codingChallanges"> Think you can challange yourself now?</a> </p>
+            <img src="images/coding_challanges.jpeg" height="186px" width="286px" alt="screenshot of image of one webapage thingy">
         </div>
     </div>
 
     <div class="flex_main">
         <div>
-            <h3>Career web dev help </h3>
-            <p> <a href="career_help.html"> Next step! Career time</a> </p>
-            <img src="image_of_random" alt="screenshot of image of one webapage thingy">
+            <h3>UI/UX Design</h3>
+            <p> <a href="list_of_sources.html#uiUxDesign"> Tools a UI/UX Designer needs</a> </p>
+            <img src="images/framework.png" height="186px" width="286px"alt="screenshot of image of one webapage thingy">
         </div>
     </div>
+
+    <div class="flex_main">
+        <div>
+            <h3>Career Help </h3>
+            <p> <a href="list_of_sources.html#careerHelp"> Next step! Career time</a> </p>
+            <img src="images/career_help.jpeg" height="186px" width="286px"  alt="screenshot of image of one webapage thingy">
+        </div>
+    </div>
+</div>
 
     <footer>
-        <img src="logo_name" alt="image of logo again">
+        <img src="images/cropped-salas_franchesca_vocabulary.png" height="86px" width="86px" alt="logo of chicken nugget">
         <p>copyright ©franny corp</p>
-        <h5>want to stay updated with the latest posts?</h5>
+        <h4>want to stay updated with the latest posts?</h4>
             <form action="">
                 <input type="email" id="emails_newsletter" name="email_newsletter">
                 <input type="submit">
             </form> 
+
+            <ul id="socialLinks"></ul>
     </footer>
 
 </body>
